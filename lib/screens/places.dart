@@ -1,3 +1,4 @@
+import 'package:favorite_places/screens/add_places.dart';
 import 'package:favorite_places/widgets/places_list.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,11 @@ class PlaceScreen extends StatelessWidget {
               color: Colors.white,
             ),
             onPressed: () {
-              // handle the press
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (ctx) => AddPlaceScreen(),
+                ),
+              );
             },
           ),
         ],
